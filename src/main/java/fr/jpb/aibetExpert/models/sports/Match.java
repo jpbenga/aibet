@@ -1,6 +1,8 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.sports;
 
 import fr.jpb.aibetExpert.enums.MatchStatus;
+import fr.jpb.aibetExpert.models.*;
+import fr.jpb.aibetExpert.models.betting.Bet;
 import jakarta.persistence.*;
 import lombok.*;
 

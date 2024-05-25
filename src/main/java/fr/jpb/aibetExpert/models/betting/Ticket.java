@@ -1,5 +1,6 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.betting;
 
+import fr.jpb.aibetExpert.models.User;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;

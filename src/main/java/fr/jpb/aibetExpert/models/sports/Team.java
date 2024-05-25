@@ -1,5 +1,7 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.sports;
 
+import fr.jpb.aibetExpert.models.Country;
+import fr.jpb.aibetExpert.models.sports.football.FootballPlayer;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -47,7 +49,7 @@ public class Team {
     private Coach coach;
 
     @OneToMany(mappedBy = "team")
-    private Set<Player> players;
+    private Set<FootballPlayer> players;
 
     @ManyToOne
     @JoinColumn(name = "stadium_id")

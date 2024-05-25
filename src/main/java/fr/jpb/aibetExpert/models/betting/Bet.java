@@ -1,4 +1,4 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.betting;
 
 import fr.jpb.aibetExpert.enums.BetStatus;
 import fr.jpb.aibetExpert.enums.BetType;

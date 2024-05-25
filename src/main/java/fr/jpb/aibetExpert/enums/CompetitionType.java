@@ -1,4 +1,4 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.enums;
 
 public enum CompetitionType {
     LEAGUE,          // Championnat (ex: Ligue 1, Premier League)

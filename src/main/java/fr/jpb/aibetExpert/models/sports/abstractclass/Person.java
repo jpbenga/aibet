@@ -1,21 +1,22 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.sports.abstractclass;
 
-import fr.jpb.aibetExpert.enums.Position;
+import fr.jpb.aibetExpert.models.Nationality;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Entity
-@Table(name = "player")
+@Table(name = "person")
+@Inheritance(strategy = InheritanceType.JOINED)  // ou InheritanceType.SINGLE_TABLE
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class Player {
-
+public abstract class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,18 +31,6 @@ public class Player {
     private LocalDate dateOfBirth;
 
     @ManyToOne
-    @JoinColumn(name = "team_id")
-    private Team team;
-
-    private Integer number;
-
-    @ManyToOne
     @JoinColumn(name = "nationality_id")
     private Nationality nationality;
-
-    @ElementCollection
-    @CollectionTable(name = "player_position", joinColumns = @JoinColumn(name = "player_id"))
-    @Enumerated(EnumType.STRING)
-    @Column(name = "position")
-    private Set<Position> positions;
 }

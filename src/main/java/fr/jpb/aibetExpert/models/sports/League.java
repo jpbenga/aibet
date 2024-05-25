@@ -1,5 +1,6 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models.sports;
 
+import fr.jpb.aibetExpert.models.Country;
 import jakarta.persistence.*;
 import lombok.*;
 

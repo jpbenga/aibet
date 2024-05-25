@@ -1,4 +1,4 @@
-package fr.jpb.aibetExpert.model;
+package fr.jpb.aibetExpert.models;
 
 import jakarta.persistence.Embeddable;
 
