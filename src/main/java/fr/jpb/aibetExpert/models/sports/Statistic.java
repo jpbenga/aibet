@@ -1,6 +1,6 @@
 package fr.jpb.aibetExpert.models.sports;
 
-import fr.jpb.aibetExpert.enums.StatisticType;
+import fr.jpb.aibetExpert.enums.football.FootballStatisticType;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,7 +21,7 @@ public class Statistic {
     private Team team;
 
     @Enumerated(EnumType.STRING)
-    private StatisticType type;
+    private FootballStatisticType type;
 
     private Integer value;
 

@@ -1,6 +1,6 @@
-package fr.jpb.aibetExpert.enums;
+package fr.jpb.aibetExpert.enums.football;
 
-public enum CompetitionType {
+public enum FootballCompetitionType {
     LEAGUE,          // Championnat (ex: Ligue 1, Premier League)
     NATIONAL_CUP,    // Coupe nationale (ex: Coupe de France, FA Cup)
     INTERNATIONAL_CUP, // Coupe internationale (ex: Ligue des Champions, Europa League)

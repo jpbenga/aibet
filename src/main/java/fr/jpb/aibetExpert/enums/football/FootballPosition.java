@@ -1,6 +1,6 @@
-package fr.jpb.aibetExpert.enums;
+package fr.jpb.aibetExpert.enums.football;
 
-public enum Position {
+public enum FootballPosition {
     GOALKEEPER,
     CENTER_BACK,
     FULL_BACK,

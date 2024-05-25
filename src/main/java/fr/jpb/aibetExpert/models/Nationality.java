@@ -17,4 +17,8 @@ public class Nationality {
 
     @Column(nullable = false, unique = true)
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "country_id", nullable = false)
+    private Country country;
 }

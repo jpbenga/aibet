@@ -1,6 +1,6 @@
 package fr.jpb.aibetExpert.models.sports;
 
-import fr.jpb.aibetExpert.enums.CompetitionType;
+import fr.jpb.aibetExpert.enums.football.FootballCompetitionType;
 import fr.jpb.aibetExpert.models.Country;
 import jakarta.persistence.*;
 import lombok.*;
@@ -23,7 +23,7 @@ public class Competition {
     private String name; // Nom de la compétition (Ligue 1, Ligue des Champions, etc.)
 
     @Enumerated(EnumType.STRING)
-    private CompetitionType type; // Type de compétition (CHAMPIONNAT, COUPE, etc.)
+    private FootballCompetitionType type; // Type de compétition (CHAMPIONNAT, COUPE, etc.)
 
     @ManyToOne
     @JoinColumn(name = "country_id")
