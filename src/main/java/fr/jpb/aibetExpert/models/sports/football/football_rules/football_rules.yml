@@ -1,0 +1,11 @@
+matchDuration: 90
+numberOfPlayersPerTeam: 11
+pointsPerWin: 3
+pointsPerDraw: 1
+pointsPerLoss: 0
+extraTimeAllowed: true
+penaltyShootoutAllowed: true
+awayGoalsRule: true
+maxYellowCards: 2
+maxRedCards: 1
+maxSubstitutions: 3

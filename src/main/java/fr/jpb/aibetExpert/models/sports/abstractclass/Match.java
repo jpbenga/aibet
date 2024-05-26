@@ -42,6 +42,13 @@ public abstract class Match {
     @Enumerated(EnumType.STRING)
     private MatchStatus status;
 
+    private boolean hasExtraTime;
+
+    private boolean hasPenaltyShootout;
+
+    @OneToMany(mappedBy = "match", cascade = CascadeType.ALL)
+    private Set<MatchLeg> legs;
+
     @ManyToOne
     @JoinColumn(name = "round_id")
     private Round round;
