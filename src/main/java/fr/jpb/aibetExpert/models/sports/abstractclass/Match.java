@@ -13,8 +13,7 @@ import lombok.*;
 import java.time.LocalDateTime;
 import java.util.Set;
 
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED) // Chaque type de match aura sa propre table
+@MappedSuperclass
 @Table(name = "match")
 @Getter
 @Setter
