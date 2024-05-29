@@ -1,6 +1,6 @@
 package fr.jpb.aibetExpert.models.sports.football;
 
-import fr.jpb.aibetExpert.models.sports.Match;
+import fr.jpb.aibetExpert.models.sports.abstractclass.Match;
 import fr.jpb.aibetExpert.models.sports.abstractclass.Sport;
 
 import java.util.List;

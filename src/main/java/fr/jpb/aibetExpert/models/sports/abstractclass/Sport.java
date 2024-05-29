@@ -1,7 +1,5 @@
 package fr.jpb.aibetExpert.models.sports.abstractclass;
 
-import fr.jpb.aibetExpert.models.sports.Match;
-
 import java.util.List;
 
 public abstract class Sport {

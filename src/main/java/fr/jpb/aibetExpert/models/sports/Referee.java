@@ -1,5 +1,6 @@
 package fr.jpb.aibetExpert.models.sports;
 
+import fr.jpb.aibetExpert.models.sports.abstractclass.Match;
 import fr.jpb.aibetExpert.models.sports.abstractclass.Person;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;

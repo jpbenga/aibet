@@ -1,5 +1,6 @@
 package fr.jpb.aibetExpert.models.sports;
 
+import fr.jpb.aibetExpert.models.sports.abstractclass.Match;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
